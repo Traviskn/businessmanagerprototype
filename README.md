@@ -1,4 +1,4 @@
-** README **
+**README**
 
 This is a mockup prototype of a small business management application.
 
