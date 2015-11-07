@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Micro Business Manager</title>
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <link rel="stylesheet" href="css/micro-manager.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" class="brand-logo center">Micro Manager</a>
+      <ul id="slide-out" class="side-nav">
+        <li><a href="/register.html"><i class="small left material-icons">shopping_cart</i> Register</a></li>
+        <li><a href="/inventory.html"><i class="small left material-icons">store</i> Inventory</a></li>
+        <li><a href="#!"><i class="small left material-icons">attach_money</i> Expenses</a></li>
+        <li><a href="#!"><i class="small left material-icons">insert_chart</i> Reports</a></li>
+        <li><a href="/settings.html"><i class="small left material-icons">settings</i> Settings</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+        <i class="mdi-navigation-menu"></i>
+      </a>
+    </nav>
+
+    <main>
+      <!-- <div class="collection">
+        <a href="/tax-rate.html" class="collection-item">Set Tax Rate<i class="secondary-content material-icons">send</i></a>
+        <a href="#!" class="collection-item">Select Currency<i class="secondary-content material-icons">send</i></a>
+        <a href="#!" class="collection-item">Select Language<i class="secondary-content material-icons">send</i></a>
+        <a href="#!" class="collection-item">User Profile<i class="secondary-content material-icons">send</i></a>
+      </div> -->
+
+      <div class="container">
+        <h3>Settings</h3>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input value="0" id="tax_rate" type="number" class="validate">
+              <label class="active" for="tax_rate">Tax Rate</label>
+            </div>
+            <div class="input-field col s6">
+              <input value="Dollars" id="currency" type="text" class="validate">
+              <label class="active" for="currency">Currency</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input value="English" id="language" type="text" class="validate">
+              <label class="active" for="language">Language</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="password" type="password" class="validate">
+              <label class="active" for="password">Change Password</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="confirm_password" type="password" class="validate">
+              <label class="active" for="confirm_password">Confirm Password</label>
+            </div>
+          </div>
+        </form>
+        <div class="center-align">
+          <a class="waves-effect waves-light btn-large">Save</a>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/micro-manager.js"></script>
+  </body>
+</html>
