@@ -1,3 +1,8 @@
 #slide-out a i.small{
   margin-top: 0.5em;
 }
+
+.card-title {
+	display: flex;
+	justify-content: space-between;
+}
