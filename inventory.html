@@ -16,6 +16,7 @@
       <a href="/" class="brand-logo center">Micro Manager</a>
       <ul id="slide-out" class="side-nav">
         <li><a href="/sales.html"><i class="small left material-icons">shopping_cart</i> Sales</a></li>
+        <li><a href="/product.html"><i class="small left material-icons">android</i> Products</a></li>
         <li><a href="/inventory.html"><i class="small left material-icons">store</i> Inventory</a></li>
         <li><a href="/expenses.html"><i class="small left material-icons">attach_money</i> Expenses</a></li>
         <li><a href="/reports.html"><i class="small left material-icons">insert_chart</i> Reports</a></li>
@@ -36,8 +37,9 @@
                 <thead>
                   <tr>
                       <th data-field="name">Item</th>
-                      <th data-field="quantity">Quantity</th>
-                      <th data-field="cost">Cost</th>
+                      <th data-field="stock">Stock</th>
+                      <th data-field="costUnit">Cost per Unit</th>
+                      <th data-field="totalCost">Total Cost</th>
                   </tr>
                 </thead>
 
@@ -46,27 +48,30 @@
                     <td>Notebook</td>
                     <td>120</td>
                     <td>$3.50</td>
+                    <td>$420</td>
                   </tr>
                   <tr>
                     <td>Pencil</td>
                     <td>80</td>
                     <td>$1.50</td>
+                    <td>$120</td>
                   </tr>
                   <tr>
                     <td>Eraser</td>
                     <td>70</td>
                     <td>$0.80</td>
+                    <td>$356</td>
                   </tr>
                 </tbody>
               </table>
               <div class="row">
                 <div class="col s12">
-                  <p class="total-assets">Total Assets: $5.80</p>
+                  <p class="total-assets">Total Assets: $596</p>
                 </div>
               </div>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">New Inventory Item<i class="material-icons right">close</i></span>
+              <span class="card-title grey-text text-darken-4">New Inventory Item<i class="material-icons right">close</i><i class="material-icons right">done</i></span>
               <div class="row">
                 <form class="col s12">
                   <div class="row">
@@ -78,16 +83,12 @@
                   <div class="row">
                     <div class="input-field col s6">
                       <input id="quantity" type="text" class="validate">
-                      <label for="quantity">Quantity</label>
+                      <label for="quantity">Stock</label>
                     </div>
                     <div class="input-field col s6">
                       <input id="cost" type="text" class="validate">
-                      <label for="cost">Cost</label>
+                      <label for="cost">Cost Per Unit</label>
                     </div>
-                  </div>
-                  <div class="row">
-                    <a class="waves-effect waves-light btn"><i class="material-icons">done</i></a>
-                    <a class="waves-effect waves-light btn red"><i class="material-icons">close</i></a>
                   </div>
                 </form>
               </div>
