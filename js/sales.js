@@ -5,7 +5,7 @@ var ProductList = function({products, addProduct}) {
         <td>{product.name}</td>
         <td>${product.price}</td>
         <td>
-          <button className="waves-effect waves-light btn" onClick={addProduct.bind(undefined, product)}>
+          <button className="btn-floating waves-effect waves-light btn" onClick={addProduct.bind(undefined, product)}>
             <i className="material-icons">add</i>
           </button>
         </td>
@@ -43,8 +43,8 @@ var ShoppingCart = function({cartItems, removeProduct}) {
         <td>{item.name}</td>
         <td>${item.price}</td>
         <td>
-          <button className="waves-effect waves-light btn" onClick={removeProduct.bind(undefined, index)}>
-            <i className="material-icons">cancel</i>
+          <button className="btn-floating btn waves-effect waves-light red" onClick={removeProduct.bind(undefined, index)}>
+            <i className="material-icons">delete</i>
           </button>
         </td>
       </tr>
