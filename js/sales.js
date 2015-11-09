@@ -52,29 +52,25 @@ var ShoppingCart = function({cartItems, removeProduct}) {
   });
 
   return (
-    <div className="row">
-      <div className="col s12 m5">
-        <div className="card-panel center-align">
-          <h3>Total: ${total}</h3>
-          {cartItems.length > 0 && (
-            <table className="bordered striped">
-              <thead>
-                <tr>
-                    <th data-field="name">Item</th>
-                    <th data-field="price">Price</th>
-                    <th>Remove</th>
-                </tr>
-              </thead>
+    <div className="card-panel center-align">
+      <h3>Total: ${total}</h3>
+      {cartItems.length > 0 && (
+        <table className="bordered striped">
+          <thead>
+            <tr>
+                <th data-field="name">Item</th>
+                <th data-field="price">Price</th>
+                <th>Remove</th>
+            </tr>
+          </thead>
 
-              <tbody>
-                {cartList}
-              </tbody>
-            </table>
-          )}
-          <br />
-          <button className="waves-effect waves-light btn">Checkout</button>
-        </div>
-      </div>
+          <tbody>
+            {cartList}
+          </tbody>
+        </table>
+      )}
+      <br />
+      <button className="waves-effect waves-light btn">Checkout</button>
     </div>
   );
 };
