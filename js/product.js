@@ -1,9 +1,14 @@
-$('#linkInventory').change(function(){
-  if (this.checked) {
-    $('#linkInv').show();
-  } else {
-    $('#linkInv').hide();
-  }
+jQuery(function($) {
+  var $optionsContainer = $('#linkInv');
+  $optionsContainer.hide();
+});
+
+jQuery(function($) {
+  var $checks = $('.checkbox-container input:checkbox').click(function() {
+    var checked = $checks.is(':checked');
+    $('#costContainer').toggle(!checked);
+    $('#linkInv').toggle(checked);
+  });
 });
 
 $(document).ready(function() {
