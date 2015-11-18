@@ -36,7 +36,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input value="Notebook" id="product_name" type="text" class="validate">
+              <input value="Necklace" id="product_name" type="text" class="validate">
               <label for="product_name">Product Name</label>
             </div>
           </div>
@@ -48,18 +48,26 @@
             <div class="input-field col s7">
               <div class="checkbox-container">
                 <input type="checkbox" id="linkInventory" checked="false"/>
-                <label for="linkInventory">Link with Inventory</label>
+                <label for="linkInventory">Track Inventory</label>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s5">
               <div id="costContainer" class="costContainer">
-                <input id="cost" type="text" class="validate">
+                <input value="$2.50" id="cost" type="text" class="validate">
                 <label for="cost">Cost per Unit</label>
               </div>
             </div>
-            <div id="linkInv" class="linkInv">
+            <div class="row">
+              <div class="input-field col s5">
+                <div id="quantityContainer" class="quantityContainer">
+                  <input value="50" id="quantity" type="text" class="validate">
+                  <label for="quantity">Quantity</label>
+                </div>
+              </div>
+            </div>
+            <!-- <div id="linkInv" class="linkInv">
               <div class="input-field col s12">
                 <select>
                   <option value="1">Notebook</option>
@@ -68,7 +76,7 @@
                 </select>
                 <label>Select Inventory Item</label>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="row">
             <a href="/product.html" class="waves-effect waves-light btn"><i class="material-icons">done</i></a>

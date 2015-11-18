@@ -1,13 +1,15 @@
 jQuery(function($) {
-  var $optionsContainer = $('#linkInv');
-  $optionsContainer.hide();
+  var $quantityContainer = $('#quantityContainer');
+  var $costContainer = $('#costContainer');
+  $quantityContainer.hide();
+  $costContainer.hide();
 });
 
 jQuery(function($) {
   var $checks = $('.checkbox-container input:checkbox').click(function() {
     var checked = $checks.is(':checked');
-    $('#costContainer').toggle(!checked);
-    $('#linkInv').toggle(checked);
+    $('#quantityContainer').toggle(checked);
+    $('#costContainer').toggle(checked);
   });
 });
 
