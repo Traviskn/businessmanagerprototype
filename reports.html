@@ -29,18 +29,74 @@
     </nav>
 
     <main>
-      <ul class="collection with-header">
-        <li class="collection-header"><h4>Assets</h4></li>
-        <li class="collection-item">Cash<span class="secondary-content">500.00</span></li>
-        <li class="collection-item">Inventory<span class="secondary-content">1000.00</span></li>
-        <li class="collection-item">Building and Equipment<span class="secondary-content">20000.00</span></li>
-        <li class="collection-item">Total Assets<span class="secondary-content">21500.00</span></li>
-        <li class="collection-header"><h4>Liabilities</h4></li>
-        <li class="collection-item">Accounts Payable<span class="secondary-content">200.00</span></li>
-        <li class="collection-item">Bank Loan<span class="secondary-content">20000.00</span></li>
-        <li class="collection-item">Retained Earnings<span class="secondary-content">1300.00</span></li>
-        <li class="collection-item">Total Liabilities<span class="secondary-content">21500.00</span></li>
-      </ul>
+      <table class="striped centered">
+        <thead>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Expense</th>
+          <th>Income</th>
+          <th>Cash Balance</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="4" class="cash-balance-header">Starting Cash Balance: 11/16/2015</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td>11/16</td>
+            <td>P: 50 Sodas</td>
+            <td>-100</td>
+            <td></td>
+            <td>900</td>
+          </tr>
+          <tr>
+            <td>11/16</td>
+            <td>P: 20 kilo meat</td>
+            <td>-80</td>
+            <td></td>
+            <td>820</td>
+          </tr>
+          <tr>
+            <td>11/16</td>
+            <td>P: 50 tortillas</td>
+            <td>-30</td>
+            <td></td>
+            <td>790</td>
+          </tr>
+          <tr>
+            <td>11/16</td>
+            <td>S: 10 Sodas</td>
+            <td></td>
+            <td>40</td>
+            <td>830</td>
+          </tr>
+          <tr>
+            <td>11/17</td>
+            <td>S: 30 Tacos</td>
+            <td></td>
+            <td>90</td>
+            <td>920</td>
+          </tr>
+          <tr>
+            <td>11/17</td>
+            <td>S: 5 Sodas</td>
+            <td></td>
+            <td>20</td>
+            <td>940</td>
+          </tr>
+          <tr>
+            <td>11/18</td>
+            <td>S: 40 Tacos</td>
+            <td></td>
+            <td>120</td>
+            <td>1060</td>
+          </tr>
+          <tr>
+            <td colspan="4" class="cash-balance-header">Ending Cash Balance: 11/18/2015</td>
+            <td>1060</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
