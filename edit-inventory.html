@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Micro Business Manager</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <link rel="stylesheet" href="css/micro-manager.css">
+    <link rel="stylesheet" href="css/edit-product.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" class="brand-logo center">Micro Manager</a>
+      <ul id="slide-out" class="side-nav">
+        <li><a href="/sales.html"><i class="small left material-icons">shopping_cart</i> Sales</a></li>
+        <li><a href="/product.html"><i class="small left material-icons">android</i> Products</a></li>
+        <li><a href="/inventory.html"><i class="small left material-icons">store</i> Inventory</a></li>
+        <li><a href="/expenses.html"><i class="small left material-icons">attach_money</i> Expenses</a></li>
+        <li><a href="/reports.html"><i class="small left material-icons">insert_chart</i> Reports</a></li>
+        <li><a href="/settings.html"><i class="small left material-icons">settings</i> Settings</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+        <i class="mdi-navigation-menu"></i>
+      </a>
+    </nav>
+    <main>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <h1 class="edit-productTitle">Edit Inventory</h1>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input value="Necklace" id="product_name" type="text" class="validate">
+              <label for="product_name">Item Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s5">
+              <input value="$2.50" id="cost" type="text" class="validate">
+              <label for="cost">Cost per Unit</label>
+            </div>
+            <div class="input-field col s5">
+              <input value="50" id="quantity" type="text" class="validate">
+              <label for="quantity">Quantity</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s7">
+              <div class="checkbox-container">
+                <input type="checkbox" id="linkInventory" checked="false"/>
+                <label for="linkInventory">Make Product</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s10">
+              <div id="priceContainer" class="priceContainer">
+                <input value="$5.50" id="salesPrice" type="text" class="validate">
+                <label for="salesPrice">Sales Price</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <a href="/inventory.html" class="waves-effect waves-light btn"><i class="material-icons">done</i></a>
+            <a href="/inventory.html" class="waves-effect waves-light btn red"><i class="material-icons">close</i></a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/micro-manager.js"></script>
+    <script type="text/javascript" src="js/edit-inventory.js"></script>
+  </body>
+</html>
