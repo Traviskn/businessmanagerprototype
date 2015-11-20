@@ -100,9 +100,8 @@ var SalesPage = React.createClass({
   getInitialState: function() {
     return {
       products: [
-        {name: 'Ring', price: 5.00, count: 0},
-        {name: 'Scarf', price: 3.25, count: 0},
-        {name: 'Shirt', price: 2.50, count: 0}
+        {name: 'Taco', price: 5.00, count: 0},
+        {name: 'Soda', price: 1.20, count: 0}
       ]
     };
   },
@@ -125,9 +124,8 @@ var SalesPage = React.createClass({
   recordSale: function() {
     this.setState({
       products: [
-        {name: 'Ring', price: 5.00, count: 0},
-        {name: 'Scarf', price: 3.25, count: 0},
-        {name: 'Shirt', price: 2.50, count: 0}
+        {name: 'Taco', price: 5.00, count: 0},
+        {name: 'Soda', price: 1.20, count: 0}
       ]
     });
   }
