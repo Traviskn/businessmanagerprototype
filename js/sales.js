@@ -54,7 +54,7 @@ var ProductGrid = function({products, sellProduct}) {
 var SalesTotal = function({products}) {
   var total = 0;
   for (let i=0; i < products.length; i++) {
-    let subtotal = products[i].price * products[i].count;
+    let subtotal = parseFloat(products[i].price) * products[i].count;
     total += subtotal;
   }
   return (
@@ -65,7 +65,7 @@ var SalesTotal = function({products}) {
         fontWeight: 'bold',
         marginRight: '40px'
       }}>
-      $ {total}
+      $ {total.toFixed(2)}
     </div>
   );
 };
@@ -100,8 +100,8 @@ var SalesPage = React.createClass({
   getInitialState: function() {
     return {
       products: [
-        {name: 'Taco', price: 5.00, count: 0},
-        {name: 'Soda', price: 1.20, count: 0}
+        {name: 'Taco', price: '5.00', count: 0},
+        {name: 'Soda', price: '1.20', count: 0}
       ]
     };
   },
